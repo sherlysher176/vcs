@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Nocturne and request a berth on a night rail journey.">
+  <title>Nocturne | Reservations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="service-strip">
+    <div class="strip-inner">
+      <p><span class="strip-dot" aria-hidden="true"></span> Winter timetable is out</p>
+      <a href="routes.html">See the routes</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Nocturne, home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">NOCTURNE</span>
+        <span class="brand-sub">night rail</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link" href="routes.html">Routes <span class="soon">soon</span></a>
+        <a class="nav-link" href="cabins.html">Cabins <span class="soon">soon</span></a>
+        <a class="nav-link" href="dining.html">Dining <span class="soon">soon</span></a>
+        <a class="nav-link" href="journal.html">Journal <span class="soon">soon</span></a>
+        <a class="nav-link" href="gallery.html">Gallery <span class="soon">soon</span></a>
+        <a class="nav-link" href="about.html">About <span class="soon">soon</span></a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="contact.html">Reserve a berth</a>
+
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation menu">
+          <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="menu-label">Menu</span>
+        </summary>
+        <div class="mobile-menu">
+          <a href="routes.html">Routes <span class="soon">soon</span></a>
+          <a href="cabins.html">Cabins <span class="soon">soon</span></a>
+          <a href="dining.html">Dining <span class="soon">soon</span></a>
+          <a href="journal.html">Journal <span class="soon">soon</span></a>
+          <a href="gallery.html">Gallery <span class="soon">soon</span></a>
+          <a href="about.html">About <span class="soon">soon</span></a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="contact-hero-inner">
+        <p class="eyebrow"><span class="eyebrow-rule" aria-hidden="true"></span> Reservations</p>
+        <h1>Book a berth.</h1>
+        <p class="section-lede">Tell us where you want to wake up. We will help with the route and your travel details.</p>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="contact-layout">
+        <form class="reservation-form" id="reservation-form" novalidate>
+          <h2>Reservation request</h2>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="route">Preferred route</label>
+              <select id="route" name="route" required>
+                <option value="">Choose a service</option>
+                <option value="N 102">N 102</option>
+                <option value="N 214">N 214</option>
+                <option value="N 308">N 308</option>
+                <option value="N 416">N 416</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="travel-date">Travel date</label>
+              <input type="date" id="travel-date" name="travel-date" required>
+            </div>
+
+            <div class="field">
+              <label for="guests">Number of guests</label>
+              <input type="number" id="guests" name="guests" min="1" max="6" value="1" required>
+            </div>
+
+            <div class="field field-full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your berth or travel plans"></textarea>
+            </div>
+          </div>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="btn btn-solid" type="submit">Send reservation request</button>
+        </form>
+
+        <aside class="contact-details" aria-label="Contact details">
+          <div class="detail-block">
+            <p class="detail-label">Email</p>
+            <a class="text-link" href="mailto:hello@nocturne.example">hello@nocturne.example</a>
+          </div>
+          <div class="detail-block">
+            <p class="detail-label">Reply time</p>
+            <p>We reply within two working days</p>
+          </div>
+          <div class="detail-block">
+            <p class="detail-label">Location</p>
+            <p>London, United Kingdom</p>
+          </div>
+
+          <div class="before-write">
+            <h3>Before you write</h3>
+            <p>Include the route code and travel date so we can find the right service sooner.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-inner">
+        <div>
+          <p class="eyebrow">Next departure</p>
+          <h2>Plan the journey from the station board.</h2>
+        </div>
+        <a class="btn btn-brass" href="routes.html">Check the timetable</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-wordmark">NOCTURNE</p>
+        <p>Sleeper trains for people who like the journey better than the arrival.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="routes.html">Routes <span class="soon">soon</span></a></li>
+          <li><a href="cabins.html">Cabins <span class="soon">soon</span></a></li>
+          <li><a href="dining.html">Dining <span class="soon">soon</span></a></li>
+          <li><a href="gallery.html">Gallery <span class="soon">soon</span></a></li>
+          <li><a href="about.html">About <span class="soon">soon</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:hello@nocturne.example">hello@nocturne.example</a></li>
+          <li><a href="contact.html">Reserve a berth</a></li>
+          <li>London, United Kingdom</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nocturne Rail. A demo project.</span>
+      <span>Built for a Git practice exercise.</span>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('#reservation-form');
+    const status = document.querySelector('#form-status');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const fields = [...form.querySelectorAll('[required]')];
+      const missing = fields.find((field) => !field.checkValidity());
+
+      if (missing) {
+        status.textContent = 'Please complete this field correctly.';
+        missing.focus();
+        return;
+      }
+
+      status.textContent = 'Your reservation request is ready. No data has been sent.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
